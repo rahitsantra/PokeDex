@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">PokéDex</div>
+        <p class="subtitle">Search the World of Pokémon</p>
+    </header>
+    <div class="search-area">
+        <div class="input-wrapper">
+            <input type="text" id="pokemonName" placeholder="Enter Pokémon Name" autocomplete="on" spellcheck="true" />
+        </div>
+        <button id="searchBtn">Search!</button>
+    </div>
+    <div class="spinner" id="spinner"></div>
+    <div id="errorMsg"></div>
+
+    <div id="pokemonCard">
+        <div class="pokemon-id" id="pokemonId">#001</div>
+        <div class="sprite-container">
+            <div class="sprite-glow"></div>
+            <img id="PokemonSprite" src="" alt="Pokémon sprite" />
+        </div>
+        <div class="pokemon-name-display" id="pokemonNameDisplay">—</div>
+        <div class="types" id="pokemonTypes"></div>
+        <div class="info-pills">
+            <div class="info-pill">
+                <div class="info-pill-label">Height</div>
+                <div class="info-pill-val" id="pokemonHeight">—</div>
+            </div>
+            <div class="info-pill">
+                <div class="info-pill-label">Weight</div>
+                <div class="info-pill-val" id="pokemonWeight">—</div>
+            </div>
+            <div class="info-pill">
+                <div class="info-pill-label">Base XP</div>
+                <div class="info-pill-val" id="pokemonXP">—</div>
+            </div>
+        </div>
+        <div class="stats" id="statsContainer"></div>
+    </div>
+
+    <footer>PokeDex&reg;, Data From PokéAPI All, Rights Reserved</footer>
+    <script src="script.js"></script>
+</body>
+</html>
